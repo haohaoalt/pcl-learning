@@ -4,15 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/hcq/pcl/pcl-learning/00base/00pcd_write/pcd_write.cpp" "/home/hcq/pcl/pcl-learning/00base/00pcd_write/build/CMakeFiles/pcd_write.dir/pcd_write.cpp.o"
+  "/home/hao/pcl/pcl-learning/00base/00pcd_write/pcd_write.cpp" "/home/hao/pcl/pcl-learning/00base/00pcd_write/build/CMakeFiles/pcd_write.dir/pcd_write.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
+  "DISABLE_DAVIDSDK"
+  "DISABLE_DSSDK"
+  "DISABLE_ENSENSO"
   "DISABLE_LIBUSB_1_0"
   "DISABLE_PCAP"
   "DISABLE_PNG"
+  "DISABLE_RSSDK"
+  "FLANN_STATIC"
   "QT_CORE_LIB"
   "QT_GUI_LIB"
   "QT_NO_DEBUG"
@@ -45,7 +50,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/libxml2"
   "/usr/include/jsoncpp"
   "/usr/include/tcl"
-  "/usr/local/include/pcl-1.9"
+  "/usr/include/pcl-1.8"
   "/usr/include/eigen3"
   "/usr/include/ni"
   "/usr/include/openni2"

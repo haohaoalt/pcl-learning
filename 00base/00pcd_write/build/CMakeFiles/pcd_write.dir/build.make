@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hcq/pcl/pcl-learning/00base/00pcd_write
+CMAKE_SOURCE_DIR = /home/hao/pcl/pcl-learning/00base/00pcd_write
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hcq/pcl/pcl-learning/00base/00pcd_write/build
+CMAKE_BINARY_DIR = /home/hao/pcl/pcl-learning/00base/00pcd_write/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pcd_write.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/pcd_write.dir/flags.make
 
 CMakeFiles/pcd_write.dir/pcd_write.cpp.o: CMakeFiles/pcd_write.dir/flags.make
 CMakeFiles/pcd_write.dir/pcd_write.cpp.o: ../pcd_write.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hcq/pcl/pcl-learning/00base/00pcd_write/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pcd_write.dir/pcd_write.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pcd_write.dir/pcd_write.cpp.o -c /home/hcq/pcl/pcl-learning/00base/00pcd_write/pcd_write.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hao/pcl/pcl-learning/00base/00pcd_write/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pcd_write.dir/pcd_write.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pcd_write.dir/pcd_write.cpp.o -c /home/hao/pcl/pcl-learning/00base/00pcd_write/pcd_write.cpp
 
 CMakeFiles/pcd_write.dir/pcd_write.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pcd_write.dir/pcd_write.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hcq/pcl/pcl-learning/00base/00pcd_write/pcd_write.cpp > CMakeFiles/pcd_write.dir/pcd_write.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hao/pcl/pcl-learning/00base/00pcd_write/pcd_write.cpp > CMakeFiles/pcd_write.dir/pcd_write.cpp.i
 
 CMakeFiles/pcd_write.dir/pcd_write.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pcd_write.dir/pcd_write.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hcq/pcl/pcl-learning/00base/00pcd_write/pcd_write.cpp -o CMakeFiles/pcd_write.dir/pcd_write.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hao/pcl/pcl-learning/00base/00pcd_write/pcd_write.cpp -o CMakeFiles/pcd_write.dir/pcd_write.cpp.s
 
 CMakeFiles/pcd_write.dir/pcd_write.cpp.o.requires:
 
@@ -90,9 +90,6 @@ pcd_write_EXTERNAL_OBJECTS =
 
 pcd_write: CMakeFiles/pcd_write.dir/pcd_write.cpp.o
 pcd_write: CMakeFiles/pcd_write.dir/build.make
-pcd_write: /usr/local/lib/libpcl_apps.so
-pcd_write: /usr/local/lib/libpcl_outofcore.so
-pcd_write: /usr/local/lib/libpcl_people.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libboost_system.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libboost_thread.so
@@ -103,7 +100,8 @@ pcd_write: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libpthread.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libqhull.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_common.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
 pcd_write: /usr/lib/libOpenNI.so
 pcd_write: /usr/lib/libOpenNI2.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libfreetype.so
@@ -128,61 +126,102 @@ pcd_write: /usr/lib/x86_64-linux-gnu/libtheoradec.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libogg.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libxml2.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libjsoncpp.so
-pcd_write: /usr/local/lib/libpcl_surface.so
-pcd_write: /usr/local/lib/libpcl_keypoints.so
-pcd_write: /usr/local/lib/libpcl_tracking.so
-pcd_write: /usr/local/lib/libpcl_recognition.so
-pcd_write: /usr/local/lib/libpcl_registration.so
-pcd_write: /usr/local/lib/libpcl_stereo.so
-pcd_write: /usr/local/lib/libpcl_segmentation.so
-pcd_write: /usr/local/lib/libpcl_features.so
-pcd_write: /usr/local/lib/libpcl_filters.so
-pcd_write: /usr/local/lib/libpcl_sample_consensus.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_io.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_search.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_filters.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_features.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_ml.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libqhull.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_surface.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_registration.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_apps.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_people.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libboost_system.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpthread.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libqhull.so
+pcd_write: /usr/lib/libOpenNI.so
+pcd_write: /usr/lib/libOpenNI2.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+pcd_write: /usr/lib/x86_64-linux-gnu/libfreetype.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libz.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkDomainsChemistry-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libexpat.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeneric-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersHyperTree-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelFlowPaths-6.3.so.6.3.0
-pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersFlowPaths-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelGeometry-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelImaging-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelMPI-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallelStatistics-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersProgrammable-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersPython-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libpython2.7.so
 pcd_write: /usr/lib/libvtkWrappingTools-6.3.a
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersReebGraph-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersSMP-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersSelection-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersVerdict-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkverdict-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libjpeg.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpng.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libtiff.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtOpenGL-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtSQL-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQtWebkit-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkViewsQt-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libproj.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOAMR-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/hdf5/openmpi/libhdf5.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libsz.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libdl.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libm.so
+pcd_write: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOEnSight-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libnetcdf_c++.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libnetcdf.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOExport-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingGL2PS-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libgl2ps.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOFFMPEG-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOMovie-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libtheoraenc.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libtheoradec.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libogg.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOGDAL-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOGeoJSON-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOImport-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOInfovis-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libxml2.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOMINC-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOMPIImage-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOMPIParallel-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOParallel-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIONetCDF-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libjsoncpp.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOMySQL-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOODBC-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOPLY-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOParallelExodus-6.3.so.6.3.0
-pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOExodus-6.3.so.6.3.0
-pcd_write: /usr/lib/x86_64-linux-gnu/libvtkexoIIc-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOParallelLSDyna-6.3.so.6.3.0
-pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOLSDyna-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOParallelNetCDF-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOParallelXML-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOPostgreSQL-6.3.so.6.3.0
@@ -203,24 +242,66 @@ pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeTypeFontConfig-6.3.so.6.
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingImage-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingMatplotlib-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingParallel-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingParallelLIC-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingQt-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolumeAMR-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolumeOpenGL-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libvtkTestingGenericBridge-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libvtkTestingIOSQL-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libvtkTestingRendering-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libvtkViewsGeovis-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libvtkWrappingJava-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_common.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_io.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_search.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_filters.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_features.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_ml.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_surface.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_registration.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_apps.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libpcl_people.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersFlowPaths-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libtheoraenc.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libtheoradec.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libogg.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOExodus-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libvtkexoIIc-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libnetcdf_c++.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libnetcdf.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOLSDyna-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libxml2.so
+pcd_write: /usr/lib/x86_64-linux-gnu/hdf5/openmpi/libhdf5.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libsz.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libdl.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libm.so
+pcd_write: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkWrappingPython27Core-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkPythonInterpreter-6.3.so.6.3.0
-pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingParallel-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libpython2.7.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersParallel-6.3.so.6.3.0
-pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingParallelLIC-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkParallelMPI-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingLIC-6.3.so.6.3.0
-pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingQt-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersTexture-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.9.5
 pcd_write: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
 pcd_write: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
-pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolumeAMR-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkFiltersAMR-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkParallelCore-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOLegacy-6.3.so.6.3.0
-pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolumeOpenGL-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libGLU.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libSM.so
@@ -228,12 +309,7 @@ pcd_write: /usr/lib/x86_64-linux-gnu/libICE.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libX11.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libXext.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libXt.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libvtkTestingGenericBridge-6.3.so.6.3.0
-pcd_write: /usr/lib/x86_64-linux-gnu/libvtkTestingIOSQL-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOSQL-6.3.so.6.3.0
-pcd_write: /usr/lib/x86_64-linux-gnu/libvtkTestingRendering-6.3.so.6.3.0
-pcd_write: /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-6.3.so.6.3.0
-pcd_write: /usr/lib/x86_64-linux-gnu/libvtkViewsGeovis-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkViewsInfovis-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkChartsCore-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingContext2D-6.3.so.6.3.0
@@ -258,9 +334,11 @@ pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOImage-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkIOCore-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkmetaio-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libz.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingAnnotation-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeType-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkftgl-6.3.so.6.3.0
+pcd_write: /usr/lib/x86_64-linux-gnu/libfreetype.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libGL.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkImagingColor-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkRenderingVolume-6.3.so.6.3.0
@@ -283,38 +361,10 @@ pcd_write: /usr/lib/x86_64-linux-gnu/libvtkCommonTransforms-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkCommonMath-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtkCommonSystem-6.3.so.6.3.0
 pcd_write: /usr/lib/x86_64-linux-gnu/libvtksys-6.3.so.6.3.0
-pcd_write: /usr/lib/x86_64-linux-gnu/libvtkWrappingJava-6.3.so.6.3.0
-pcd_write: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-6.3.so.6.3.0
-pcd_write: /usr/local/lib/libpcl_ml.so
-pcd_write: /usr/local/lib/libpcl_visualization.so
-pcd_write: /usr/local/lib/libpcl_search.so
-pcd_write: /usr/local/lib/libpcl_kdtree.so
-pcd_write: /usr/local/lib/libpcl_io.so
-pcd_write: /usr/local/lib/libpcl_octree.so
-pcd_write: /usr/local/lib/libpcl_common.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libfreetype.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libz.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libexpat.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libjpeg.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libpng.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libtiff.so
 pcd_write: /usr/lib/x86_64-linux-gnu/libproj.so
-pcd_write: /usr/lib/x86_64-linux-gnu/hdf5/openmpi/libhdf5.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libsz.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libdl.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libm.so
-pcd_write: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libnetcdf_c++.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libnetcdf.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libgl2ps.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libtheoraenc.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libtheoradec.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libogg.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libxml2.so
-pcd_write: /usr/lib/x86_64-linux-gnu/libjsoncpp.so
+pcd_write: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-6.3.so.6.3.0
 pcd_write: CMakeFiles/pcd_write.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hcq/pcl/pcl-learning/00base/00pcd_write/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable pcd_write"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hao/pcl/pcl-learning/00base/00pcd_write/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable pcd_write"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pcd_write.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -331,6 +381,6 @@ CMakeFiles/pcd_write.dir/clean:
 .PHONY : CMakeFiles/pcd_write.dir/clean
 
 CMakeFiles/pcd_write.dir/depend:
-	cd /home/hcq/pcl/pcl-learning/00base/00pcd_write/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hcq/pcl/pcl-learning/00base/00pcd_write /home/hcq/pcl/pcl-learning/00base/00pcd_write /home/hcq/pcl/pcl-learning/00base/00pcd_write/build /home/hcq/pcl/pcl-learning/00base/00pcd_write/build /home/hcq/pcl/pcl-learning/00base/00pcd_write/build/CMakeFiles/pcd_write.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hao/pcl/pcl-learning/00base/00pcd_write/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hao/pcl/pcl-learning/00base/00pcd_write /home/hao/pcl/pcl-learning/00base/00pcd_write /home/hao/pcl/pcl-learning/00base/00pcd_write/build /home/hao/pcl/pcl-learning/00base/00pcd_write/build /home/hao/pcl/pcl-learning/00base/00pcd_write/build/CMakeFiles/pcd_write.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pcd_write.dir/depend
 
