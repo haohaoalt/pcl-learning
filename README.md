@@ -19,7 +19,7 @@ PCL（Point Cloud Library）点云库  **个人开发环境：Ubuntu18.04**
 **新建了一个PCL微信交流群，扫码下图可以加入下（若无法加群，请关注公众号【双愚】后台回复PCL加群）**
 
 
-![image](https://user-images.githubusercontent.com/20675770/171319799-79f21cc8-84bd-47ae-abeb-61e32856e49e.png)
+![image](https://user-images.githubusercontent.com/20675770/174856411-ca460d1a-d748-4b51-b8b5-b6259394ec0a.png)
 
 
 **相关项目实战:**
@@ -58,20 +58,20 @@ a graph of code libraries
 
 ##### step2
 
-* [02kdtree k维tree](02kdtree)
-* [03octree 八叉树](03octree)
-* [04search](04search)
+* [* 02kdtree k维tree](02kdtree)
+* [* 03octree 八叉树](03octree)
+* [* 04search](04search)
 * [05sample consensus  抽样一致性模块](05sampleconsensus抽样一致性模块)
 * [06range-images深度图像](06range-images深度图像)
 * [07 ...]()
 
 ##### step3
 
-* [08 io 输入输出](08IO输入输出)
-* [09 filters 滤波](09filters滤波)
-* [10 features 特征](10features特征)
+* [* 08 io 输入输出](08IO输入输出)
+* [* 09 filters 滤波](09filters滤波)
+* [* 10 features 特征](10features特征)
 
-##### step4
+##### step4（根据个人需要）
 
 * [11 surface表面 ](11surface表面 )
 * [12 segmentation分割](12segmentation分割)
@@ -140,3 +140,11 @@ make  // 生成可执行文件命令
 Copyright (c) [双愚](https://github.com/HuangCongQing/pcl-learning). All rights reserved.
 
 Licensed under the [MIT](./LICENSE) License.
+
+
+
+**最后，如果您想要支持我的工作，请扫描下面的二维码**
+
+![image](https://user-images.githubusercontent.com/20675770/174442478-705129f7-ca4d-4e89-9b21-7e1b84817940.png)
+
+
