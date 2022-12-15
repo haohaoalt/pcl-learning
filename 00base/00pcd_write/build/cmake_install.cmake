@@ -1,4 +1,4 @@
-# Install script for directory: /home/hao/pcl/pcl-learning/00base/00pcd_write
+# Install script for directory: /home/hao007/pcl-learning/00base/00pcd_write
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/hao/pcl/pcl-learning/00base/00pcd_write/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hao007/pcl-learning/00base/00pcd_write/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

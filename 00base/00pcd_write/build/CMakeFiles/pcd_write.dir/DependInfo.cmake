@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/hao/pcl/pcl-learning/00base/00pcd_write/pcd_write.cpp" "/home/hao/pcl/pcl-learning/00base/00pcd_write/build/CMakeFiles/pcd_write.dir/pcd_write.cpp.o"
+  "/home/hao007/pcl-learning/00base/00pcd_write/pcd_write.cpp" "/home/hao007/pcl-learning/00base/00pcd_write/build/CMakeFiles/pcd_write.dir/pcd_write.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -51,7 +51,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/jsoncpp"
   "/usr/include/tcl"
   "/usr/include/pcl-1.8"
-  "/usr/include/eigen3"
+  "/usr/local/include/eigen3"
   "/usr/include/ni"
   "/usr/include/openni2"
   "/usr/include/x86_64-linux-gnu/qt5"

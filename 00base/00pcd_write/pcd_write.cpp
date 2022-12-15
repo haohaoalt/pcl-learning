@@ -1,11 +1,4 @@
-/*
- * @Description: 
- * @Author: HCQ
- * @Company(School): UCAS
- * @Date: 2020-10-04 18:33:16
- * @LastEditors: HCQ
- * @LastEditTime: 2020-10-04 18:33:29
- */
+
 #include <iostream>
 #include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
@@ -27,7 +20,7 @@ int main(int argc, char **argv)
         point.z = 1024 * rand() / (RAND_MAX + 1.0f);
     }
 
-    pcl::io::savePCDFileASCII("test_pcd.pcd", cloud);
+    pcl::io::savePCDFileASCII("../test_pcd.pcd", cloud);
     std::cerr << "Saved " << cloud.size() << " data points to test_pcd.pcd." << std::endl;
 
     for (const auto &point : cloud)

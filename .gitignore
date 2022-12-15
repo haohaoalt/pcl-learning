@@ -22,3 +22,4 @@ build/
 # local.properties #过滤具体文件
 # ！local.properties#添加具体文件
 # *.[oa]#忽略所有以 .o 或 .a 结尾的文件
+*/build/*
