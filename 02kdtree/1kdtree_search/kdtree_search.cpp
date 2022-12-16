@@ -1,14 +1,3 @@
-/*
- * @Description: https://www.cnblogs.com/li-yao7758258/p/6437440.html
- * @Author: HCQ
- * @Company(School): UCAS
- * @Email: 1756260160@qq.com
- * @Date: 2020-10-08 21:46:40
- * @LastEditTime: 2020-10-27 16:03:16
- * @FilePath: /pcl-learning/02kdtree/1kdtree_search/kdtree_search.cpp
- */
-
-
 #include <pcl/point_cloud.h>        //点类型定义头文件
 #include <pcl/kdtree/kdtree_flann.h> //kdtree类定义头文件
 
@@ -16,12 +5,11 @@
 #include <vector>
 #include <ctime>
 
-int
-main (int argc, char** argv)
+int main (int argc, char** argv)
 {
   srand (time (NULL));   //用系统时间初始化随机种子
   //创建一个PointCloud<pcl::PointXYZ>
-  pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
+  pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
 
   // 随机点云生成
   cloud->width = 1000;             //此处点云数量
